@@ -21,6 +21,7 @@ public class HospitalManagement
                 "Nov",
                 "Dec"
         };
+
         Calendar calendar = Calendar.getInstance();
         //System.out.println("--------------------------------------------------------------------------------");
         int count1 = 4, count2 = 4, count3 = 4, count4 = 4, count5 = 4, count6 = 4;
@@ -29,25 +30,25 @@ public class HospitalManagement
         System.out.println("--------------------------------------------------------------------------------");
         System.out.print("Date: " + months[calendar.get(Calendar.MONTH)] + " " + calendar.get(Calendar.DATE) + " " + calendar.get(Calendar.YEAR));
         System.out.println("\t\t\t\t\t\tTime: " + calendar.get(Calendar.HOUR) + ":" + calendar.get(Calendar.MINUTE) + ":" + calendar.get(Calendar.SECOND));
-        doctor[] d = new doctor[25];
-        patient[] p = new patient[100];
-        lab[] l = new lab[20];
-        fecility[] f = new fecility[20];
-        medical[] m = new medical[100];
-        staff[] s = new staff[100];
+        Doctor[] d = new Doctor[25];
+        Patient[] p = new Patient[100];
+        Lab[] l = new Lab[20];
+        Fecility[] f = new Fecility[20];
+        Medical[] m = new Medical[100];
+        Staff[] s = new Staff[100];
         int i;
         for (i = 0; i < 25; i++)
-            d[i] = new doctor();
+            d[i] = new Doctor();
         for (i = 0; i < 100; i++)
-            p[i] = new patient();
+            p[i] = new Patient();
         for (i = 0; i < 20; i++)
-            l[i] = new lab();
+            l[i] = new Lab();
         for (i = 0; i < 20; i++)
-            f[i] = new fecility();
+            f[i] = new Fecility();
         for (i = 0; i < 100; i++)
-            m[i] = new medical();
+            m[i] = new Medical();
         for (i = 0; i < 100; i++)
-            s[i] = new staff();
+            s[i] = new Staff();
 
         d[0].did = "21";
         d[0].dname = "Dr.Ghanendra";
